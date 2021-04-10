@@ -2,11 +2,11 @@ package Tutorials;
 
 interface Bicycle{
     int a = 45;
-    void applyBrake(int decrement);
-    void speedUp(int increment);
+    abstract void applyBrake(int decrement);
+    abstract void speedUp(int increment);
 }
 
-interface HornBicycle{
+interface HornBicycle extends Bicycle{
     int x = 45;
     void blowHornK3g();
     void blowHornmhn();
@@ -36,8 +36,8 @@ public class Interface {
         AvonCycle cycleHarry = new AvonCycle();
         cycleHarry.applyBrake(1);
         // You can create properties in Interfaces
-        System.out.println(cycleHarry.a);
-        System.out.println(cycleHarry.x);
+        //System.out.println(cycleHarry.a);
+        //System.out.println(cycleHarry.x);
 
         // You cannot modify the properties in Interfaces as they are final
         // cycleHarry.a = 454;

@@ -2,6 +2,7 @@ package Tutorials;
 
 
 abstract class Parent2{
+	
     public Parent2(){
         System.out.println("Mai base2 ka constructor hoon");
     }
@@ -12,14 +13,21 @@ abstract class Parent2{
     abstract public void greet2();
 }
 
-class Child2 extends Parent2{
-    @Override
-    public void greet(){
-        System.out.println("Good morning");
+ class Child2 extends Parent2{   
+	
+	 public void greet() {
+			System.out.println("Good morning");
+		}
+	
+	public void greet2() {
+		System.out.println("Good morning");
+	}
+    public void bluesheild() {
+    	System.out.println("Blue car");
     }
-    @Override
-    public void greet2(){
-        System.out.println("Good afternoon");
+    
+    public void automatic() {
+    	System.out.println("Automatic");
     }
 }
 
@@ -31,8 +39,10 @@ abstract class Child3 extends Parent2{
 public class Abstract {
 
     public static void main(String[] args) {
-        //Parent2 p = new Parent2(); -- error
+        //Parent2 p = new Parent2(); //-- error
         Child2 c = new Child2();
         //Child3 c3 = new Child3(); -- error
+        
+        
     }
 }

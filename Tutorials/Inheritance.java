@@ -15,10 +15,12 @@ class Base{
     public void printMe(){
         System.out.println("I am a base class");
     }
+    
+    
 }
 
 class Derived extends Base{
-    public int y;
+    private int y;
 
     public int getY() {
         return y;
@@ -39,8 +41,9 @@ public class Inheritance {
         Derived d = new Derived();
         d.setY(43);
         System.out.println(d.getY());
+        
         d.printMe();
         d.setX(10);
-        System.out.println(d.getX());
+       System.out.println(d.getX());
     }
 }

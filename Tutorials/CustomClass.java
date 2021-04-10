@@ -1,7 +1,7 @@
 package Tutorials;
 
 	class Employee{
-	    int id=10;
+	    int id;
 	    int salary;
 	    String name;
 	    public void printDetails(){
@@ -36,9 +36,9 @@ package Tutorials;
 
 	        // Printing the Attributes
 	        
-	        harry.printDetails();
-	        john.printDetails();
-	        int salary = john.getSalary();
+	       // harry.printDetails();
+	        //john.printDetails();
+	       //int salary = john.getSalary();
 	        //System.out.println(salary);
 	        // System.out.println(harry.id);
 	        // System.out.println(harry.name);
